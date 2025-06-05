@@ -59,7 +59,7 @@ logger.success("天気アシスタントエージェントの作成が完了し�
 # 天気エージェントのテスト
 logger.info("天気エージェントをテストします...")
 
-result = Runner.run_sync(weather_agent, "東京の天気はどうですか？")
+result = Runner.run_sync(weather_agent, "東京の天気はどうですか？ケルビンに変換して教えて")
 logger.info(f"エージェントの回答: {result.final_output}")
 
 logger.success("天気エージェントのテストが完了しました")
